@@ -1,0 +1,67 @@
+GIT
+  remote: git@github.com:spree/endpoint_base.git
+  revision: af1edfccbd5bd2f282bab44c2c17f3f8a22e38e3
+  specs:
+    endpoint_base (2.0)
+      activesupport
+      json
+      sinatra (= 1.4.3)
+      sinatra-contrib
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.0.1)
+      i18n (~> 0.6, >= 0.6.4)
+      minitest (~> 4.2)
+      multi_json (~> 1.3)
+      thread_safe (~> 0.1)
+      tzinfo (~> 0.3.37)
+    atomic (1.1.14)
+    backports (3.3.5)
+    diff-lcs (1.2.5)
+    httparty (0.12.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    i18n (0.6.5)
+    json (1.8.1)
+    minitest (4.7.5)
+    multi_json (1.8.2)
+    multi_xml (0.5.5)
+    rack (1.5.2)
+    rack-protection (1.5.1)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.7)
+    rspec-expectations (2.14.4)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.4)
+    sinatra (1.4.3)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sinatra-contrib (1.4.1)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (~> 1.3)
+    thread_safe (0.1.3)
+      atomic
+    tilt (1.4.1)
+    tzinfo (0.3.38)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  endpoint_base!
+  httparty
+  rack-test
+  rspec

@@ -1,20 +1,20 @@
 {
-    "name": "groningenrb",
-    "display": "Sample Groningen RB Test Endpoint",
-    "description": "Testing endpoint",
-    "help": "",
-    "icon_url": "spree.png",
-    "services": [
-        {
-            "name": "received",
-            "path": "/",
-            "description": "Echo's received message's payload in 'received' key of response, with a HTTP 200 response code.",
-            "requires": {
-                "parameters": []
-            },
-            "recommends": {
-              "messages": [ "echo:received" ]
-            }
-        }
-    ]
+  "name": "groningenrb",
+  "display": "Sample Groningen RB Test Endpoint",
+  "description": "Testing endpoint",
+  "help": "",
+  "icon_url": "spree.png",
+  "services": [
+    {
+      "name": "dashing",
+      "path": "/dashing",
+      "description": "Collect new orders",
+      "requires": {
+        "parameters": []
+      },
+      "recommends": {
+        "messages": [ "order:new" ]
+      }
+    }
+  ]
 }
