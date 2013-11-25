@@ -7,7 +7,7 @@ describe GroningenrbEndpoint do
       "message" => "order:new",
       :message_id => "abc",
       :payload => {
-        "order" => Factories.order,
+        "order" => Factories.order("totals"=> {"order"=> rand(1000)}),
         "original" => Factories.original,
         "parameters" => Factories.parameters
       }
@@ -20,5 +20,4 @@ describe GroningenrbEndpoint do
       expect(last_response).to be_ok
     end
   end
-
 end
