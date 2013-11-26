@@ -8,9 +8,15 @@
     {
       "name": "dashing",
       "path": "/dashing",
-      "description": "Collect new orders",
+      "description": "Show latest order total amount",
       "requires": {
-        "parameters": []
+        "parameters": [
+          {
+            "name": "dashing_key",
+            "description": "API key for dashing app",
+            "data_type": "string"
+          }
+        ]
       },
       "recommends": {
         "messages": [ "order:new" ]

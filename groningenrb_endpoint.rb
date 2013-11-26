@@ -6,6 +6,7 @@ class GroningenrbEndpoint < EndpointBase
   set :logging, true
 
   post '/dashing' do
+
     total_order = @message[:payload][:order][:totals][:order]
     HTTParty.post('http://dashing-groningenrb.herokuapp.com/widgets/lastorder',
       :body => { auth_token: @config["groningenrb.dashing_key"], current: total_order.to_i }.to_json)
