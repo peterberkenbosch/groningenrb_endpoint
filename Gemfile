@@ -6,5 +6,5 @@ group :test do
 end
 
 
-gem 'httparty'
+gem 'httparty', '>= 0.14.0'
 gem 'endpoint_base', :git => 'git@github.com:spree/endpoint_base.git'
